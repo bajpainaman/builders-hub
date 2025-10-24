@@ -214,6 +214,11 @@ function Stake({ onSuccess }: BaseConsoleToolProps) {
           <Steps>
             <Step>
               <h3 className="text-lg font-semibold mb-4">Node Credentials</h3>
+                <Alert variant="info" className="mt-4">
+                  <strong>Note:</strong> This step queries your local AvalancheGo node at <code>127.0.0.1:9650</code>.
+                  Ensure AvalancheGo is running locally, or use your remote node’s public IP if it’s hosted elsewhere.
+                </Alert>
+
 
               <AddValidatorControls
                 defaultAddress={pChainAddress || ""}
